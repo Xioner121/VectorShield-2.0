@@ -5,7 +5,6 @@ import java.util.ArrayList;//Util for ArrayLists
 
 public class WriteSettings {
 //Writes security option booleans as string output to Json files
-//Source 1 Utilized for better understanding of nested ArrayLists and stating them. Source 13 helped with general code structure below.
    public void writeSettings(ArrayList<ArrayList<Boolean>> array, String[] names) {
        //Looping through main ArrayList
       for (int i = 0;i < array.size(); i++) {
@@ -14,7 +13,6 @@ public class WriteSettings {
           //Creating blank file/overwriting existing one with corresponding name from names array
          File file = new File(names[i] + ".json");
          //Instantiating BufferedWriter
-         //(Changed from just utilizing FileWriter in Crit B due to greater versatility)
          BufferedWriter fileOutput = null;
          try {
             //Setting BufferredWriter with created file and FileWriter
