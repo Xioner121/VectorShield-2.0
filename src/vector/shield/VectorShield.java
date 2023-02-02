@@ -967,30 +967,3 @@ menuButtons.selectedToggleProperty().addListener((ObservableValue<? extends Togg
    new FileOutputStream("CompletedActions.json").close();//Clearing out old Action file
    }
 }
-/*
-Sources:
-Numbers denote source index refrenced in code
-1 - https://www.geeksforgeeks.org/arraylist-of-arraylist-in-java/
-2 - http://tutorials.jenkov.com/javafx/button.html
-//General source used to refresh knowledge on JavaFX buttons. No direct code snippets to source.
-3 - https://stackoverflow.com/questions/52370581/javafx-button-with-svg-shape-still-has-rectangular-clickable-area
-4 - https://edencoding.com/svg-javafx/#svg-with-css
-5 - https://stackoverflow.com/questions/11599041/how-to-align-icon-and-text-inside-the-big-button
-6 - https://stackoverflow.com/questions/32317126/cant-click-on-buttons-in-hbox
-//Helped solve bug due to overlapping panel organization. No direct code snippets to source.
-7 - https://www.tutorialspoint.com/javafx/layout_stackpane.htm
-8 - https://stackoverflow.com/questions/22047457/how-to-change-the-text-font-size-in-javafx
-9 - https://stackoverflow.com/questions/30008005/javafx-how-to-clear-all-the-nodes-from-an-anchorpane
-10 - https://stackoverflow.com/questions/59012263/how-to-tell-when-an-instance-of-command-prompt-is-closed-in-java
-11 - https://stackoverflow.com/questions/17118846/how-to-prevent-batch-window-from-closing-when-error-occurs
-12 - https://stackoverflow.com/questions/23420370/windows-batch-file-batch-file-stops-executing-mid-way-after-a-command-that-tak
-//11 & 12 Helped resolve error pause issue on batch script. No direct code snippets to source.
-13 - https://www.java67.com/2016/07/how-to-read-text-file-into-arraylist-in-java.html
-14 - https://www.foxinfotech.in/2019/05/how-to-create-daemon-thread-in-java.html
-15 - https://stackoverflow.com/questions/17850191/why-am-i-getting-java-lang-illegalstateexception-not-on-fx-application-thread
-//Helped resolve an illegalstateexception error from Dashboard daemon thread. No direct code snippets to source.
-16 - VectorShield.Java code from pervious versions
-Although no direct code can easily be pointed to as sourced from it, certain snippets likely remain as the original VectorShield.Java 
-developed by me in 2019 served as a decent foundation to work from, and thus part of the knowledge and code from it was utilized in order
-to be shaped into the current code displayed currently.
-*/
