@@ -59,7 +59,6 @@ public class VectorShield extends Application {
    static WriteSettings printToJson = new WriteSettings();
 
     //Arraylist containing the below set Arraylists for the writeSettings method
-    //(changed from Array as mentioned in crit. B due to combatibility issues between the two data types)
     ArrayList<ArrayList<Boolean> > arrayLists =  new ArrayList< >(); 
     
    //Seperate Arraylists of all security options, containing their selected states as booleans
@@ -85,7 +84,6 @@ public class VectorShield extends Application {
                                     
          
        //Initiating Preliminary options as checkboxes. They will be organized per security type for ease of use, constituting Cyberpatriot focused 
-       //orginzation as desc. in Crit. A
        //Check boxes can be selected/unselected the same way a button is.
       CheckBox Prelimroot = new CheckBox("Preliminary");//Preliminary options selection checkbox
         CheckBox Networking = new CheckBox("Networking");//Networking catagory selection checkbox
@@ -545,10 +543,8 @@ public class VectorShield extends Application {
                     //Buttons
                     ToggleButton PrelimOption = new ToggleButton("Preliminary");
                     PrelimOption.setUserData("preliminary");//Setting userData(for future computation of selections)
-                    //Source 3&4&8 Utilized in CSS code of StyleClass 'buttonMenu' for structure
                     PrelimOption.getStyleClass().add("buttonMenu");//Setting Button Style & Shape
                     PrelimOption.setPickOnBounds(false);//Setting bounds for selection computation to shape of button
-                    //Source 5 helped demonstrate the neccesity of this, applies to all setAlighnments
                     PrelimOption.setAlignment(Pos.BASELINE_LEFT);//Setting Text to left 
                     PrelimOption.setMinWidth(220);//Minimum button width
                     //Labels
@@ -617,7 +613,6 @@ public class VectorShield extends Application {
              
                                 //GUI Layouts
       //MainGUI Layout
-      //StackPane understanding and usage from Source 7
       StackPane MainLayout = new StackPane();//Overall layout of GUI as a StackPane
         
         //Active Layer
@@ -755,7 +750,6 @@ public class VectorShield extends Application {
                 scriptRunning=true;//Setting ScriptRunning to true, for to be set threads
                 handleOptions(PreliminaryBoxes, SecpolBoxes, ServiceBoxes);//Converting all user options to booleans and exporting with method
                 ActiveLayer.setCenter(progressLayout);//Setting progress screen to center of mainLayout
-                //Source 9 helped understand usage of .clear() method and subsequent uses
                 ActiveLayerLeft.getChildren().clear();//Removing menu options
                     //Playing loading animation
                         rotateTransition.play();
@@ -789,7 +783,6 @@ public class VectorShield extends Application {
             };
                   };
                    //Setting Dashboard update thread
-        //Source 14 helped demonstrate how to set daemon Thread
         ProgressDashboard.getItems().clear();//Clearing Dashboard
         Thread dashboardThread = new Thread(updateDashboard);//Setting new thread with updateDashboard Runnable
         dashboardThread.setDaemon(true);//Setting as daemon
